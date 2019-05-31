@@ -7,11 +7,11 @@ const sampleData = {
     "surveyId": "surveyId1",
     "surveyDate": "2019-05-01T15:00:00.000Z",
     "hospital": "Atlas Health",
-    "facility" : "New Jersey Clinic",
     "countryIsoCode": "US",
     "countryName": "United States",
     "state": "New Jersey",
     "city": "Newark",
+    "facility" : "New Jersey Clinic",
     "department": "Cardiology",
     "provider": "Francisco B Clay",
     "status": "confirm",
@@ -100,13 +100,28 @@ function generateSurveys(result){
     let hospitals = JSON.parse(fs.readFileSync('hospitals.json', 'utf-8'));
     
     for(i=1; i <= surveyCount; i++){
-        var sdate = randomDate(end_date, start_date);
+        var surveyDate = randomDate(end_date, start_date);
         var h = randomElementFromJson(hospitals);
         var f = randomElementFromJson(h.hospital.facility);
         var d = randomElementFromJson(f.departments);
         //console.log("Hospital: "+h.hospital.name+", facility: "+f.name + ", Dept: "+d.name);
+        var q = '';
+        var a = '';
 
-        //console.log(i+"\t -Survey - "+getHash(i+sdate)+", hospital: "+h.hospital.name+", dept: "+dept+" date: "+sdate);        
+        var survey = {};
+        survey.surveyId = getHash(h.hospital.name+f.name+d.name+sdate);
+        survey.surveyDate = surveyDate;
+        survey.hospital = h.hospital.name;
+        survey.countryIsoCode = '';
+        survey.countryName = '';
+        survey.state = '';
+        survey.city = '';
+        survey.facility = f.name;
+        survey.department = d.name;
+        survey.question = q;
+        survey.answer = a;
+        
+        //console.log(i+"\t -Survey - "+getHash(i+sdate)+", hospital: "+h.hospital.name+", dept: "+dept+" date: "+surveyDate);        
     }
 
 }
