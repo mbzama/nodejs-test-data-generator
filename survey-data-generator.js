@@ -19,7 +19,6 @@ const sampleData = {
     "answer": "30"
   };
 
-const hospitals = []
 const departments = []
 const status = ["confirmed", "cancelled", "no-show", "pending", "awarded"]
 const statusForPending = ["confirmed", "cancelled"]
@@ -37,8 +36,10 @@ var output_file = '';
 var surveyCount = '';
 var start_date = '';
 var end_date = '';
+var hospitals;
 
-var result = {"surveyCount":"10", "start_date":"2019-01-01", "end_date":"2019-01-10", "output_file":"temp.json"}
+
+var result = {"surveyCount":"1", "start_date":"2019-01-01", "end_date":"2019-01-10", "output_file":"temp.json"}
 generateSurveys(result);
 
 
@@ -94,8 +95,19 @@ function generateSurveys(result){
     console.log("Hash: "+getHash(start_date+surveyCount+end_date+output_file));
     console.log("----------------------");
 
-    //Select Random dates 
-    console.log("randomDate: "+randomDate(end_date, start_date));
+    
+    //Read hospitals
+    let hospitals = JSON.parse(fs.readFileSync('hospitals.json', 'utf-8'));
+    
+    for(i=1; i <= surveyCount; i++){
+        var sdate = randomDate(end_date, start_date);
+        var h = randomElementFromJson(hospitals);
+        var f = randomElementFromJson(h.hospital.facility);
+        var d = randomElementFromJson(f.departments);
+        //console.log("Hospital: "+h.hospital.name+", facility: "+f.name + ", Dept: "+d.name);
+
+        //console.log(i+"\t -Survey - "+getHash(i+sdate)+", hospital: "+h.hospital.name+", dept: "+dept+" date: "+sdate);        
+    }
 
 }
 
@@ -105,6 +117,13 @@ function onErr(err) {
 }
 
 //Utility functions
+function randomElementFromJson(jsonarray){
+    var obj_keys = Object.keys(jsonarray);
+    var ran_key = obj_keys[Math.floor(Math.random() *obj_keys.length)];
+    var element = jsonarray[ran_key];
+    return element;
+}
+
 function getHash(t){
     return  crypto.createHash('md5').update(t).digest('hex');
 }
@@ -118,7 +137,10 @@ function getTimeline(department,hospital){
 }
 
 function randomDate(start, end) {
-    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+    var t = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+    t.setMinutes(0);
+    t.setMilliseconds(0);
+    return t;
   }
 
 function convertUnixToTimeFormat(unixTime){
