@@ -1,0 +1,236 @@
+[
+    {
+      "hospital": {
+        "name": "Atlas Health",
+        "facility": [
+          {
+            "name" : "New Jersey Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "New Jersey",
+            "city": "Newark",            
+            "departments": [
+              {
+                "name": "Cardiology",
+                "providers": [
+                  "Francisco B Clay",
+                  "Jeraldine M Joseph"
+                ],
+                "timings": {
+                  "startHours": 8,
+                  "endHours": 20
+                }
+              },
+              {
+                "name": "Oncology",
+                "providers": [
+                  "Alexander N Green",
+                  "Brian C Lewis"
+                ],
+                "timings": {
+                  "startHours": 8,
+                  "endHours": 20
+                }
+              }
+            ]
+          },
+          {
+            "name" : "Pennsylvania Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Pennsylvania",
+            "city": "Buffalo",
+            "departments": [
+              {
+                "name": "Urology",
+                "providers": [
+                  "James E Sexton"
+                ],
+                "timings": {
+                  "startHours": 8,
+                  "endHours": 16
+                }
+              },
+                {
+                  "name": "Oncology",
+                  "providers": [
+                    "Brain Lara",
+                    "Joy C Small"
+                  ],
+                  "timings": {
+                    "startHours": 14,
+                    "endHours": 20
+                  }
+                }
+              ]
+          }
+        ]
+      }
+    },
+    {
+      "hospital": {
+        "name": "Illinois Urologic Health Surgeons",
+        "facility": [
+          {
+            "name" : "Spring Valley Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Illinois",
+            "city": "Spring Valley",
+            "departments": [
+              {
+                "name": "Urology",
+                "providers": [
+                  "Steve Chung"
+                ],
+                "timings": {
+                  "startHours": 8,
+                  "endHours": 16
+                }
+              }
+            ]
+          },
+          {
+            "name" : "Peru Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Illinois",
+            "city": "Peru",
+            "departments": [
+              {
+                "name": "Urology",
+                "providers": [
+                  "Mark Twain"
+                ],
+                "timings": {
+                  "startHours": 8,
+                  "endHours": 16
+                }
+              }
+            ]
+          },
+          {
+            "name" : "Ottawa Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Illinois",
+            "city": "Ottawa",
+            "departments": [
+              {
+                "name": "Urology",
+                "providers": [
+                  "John Watson"
+                ],
+                "timings": {
+                  "startHours": 14,
+                  "endHours": 20
+                }
+              }
+            ]
+          },
+          {
+            "name" : "Princeton Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Illinois",
+            "city": "Princeton",
+            "departments": [
+              {
+                "name": "Urology",
+                "providers": [
+                  "Walter Bates"
+                ],
+                "timings": {
+                  "startHours": 13,
+                  "endHours": 20
+                }
+              }
+            ]
+          },
+          {
+            "name" : "Dixon Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Illinois",
+            "city": "Dixon",
+            "departments": [
+              {
+                "name": "Urology",
+                "providers": [
+                  "Steve Rogers"
+                ],
+                "timings": {
+                  "startHours": 8,
+                  "endHours": 16
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "hospital": {
+        "name": "Kulkarni Orthodontics",
+        "facility": [
+          {
+            "name" : "Centerville Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Ohio",
+            "city": "Centerville",
+            "departments": [
+              {
+                "name": "Dental",
+                "providers": [
+                  "Raj Kulkarni"
+                ],
+                "timings": {
+                  "startHours": 8,
+                  "endHours": 18
+                }
+              }
+            ]
+          },
+          {
+            "name" : "Wilmington Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Ohio",
+            "city": "Wilmington",
+            "departments": [
+              {
+                "name": "Dental",
+                "providers": [
+                  "Martin G. Fitz"
+                ],
+                "timings": {
+                  "startHours": 10,
+                  "endHours": 20
+                }
+              }
+            ]
+          },
+          {
+            "name" : "Oakwood Clinic",
+            "countryIsoCode": "US",
+            "countryName": "United States",
+            "state": "Ohio",
+            "city": "Oakwood",
+            "departments": [
+              {
+                "name": "Dental",
+                "providers": [
+                  "Martin G. Fitz"
+                ],
+                "timings": {
+                  "startHours": 10,
+                  "endHours": 20
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]

@@ -1,0 +1,17 @@
+{
+  "name": "test-data-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "op_encounter_generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "moment": "^2.24.0",
+    "moment-random": "^1.0.4",
+    "prompt": "^1.0.0"
+  }
+}

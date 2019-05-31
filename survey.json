@@ -1,0 +1,15 @@
+{
+    "surveyId": "surveyId1",
+    "encounterDate": "2019-05-01T15:00:00.000Z",
+    "hospital": "Atlas Health",
+    "facility" : "New Jersey Clinic",
+    "countryIsoCode": "US",
+    "countryName": "United States",
+    "state": "New Jersey",
+    "city": "Newark",
+    "department": "Cardiology",
+    "provider": "Francisco B Clay",
+    "status": "confirm",
+    "question": "How long did have to wait?",
+    "answer": "30"
+  }

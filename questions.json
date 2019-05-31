@@ -1,0 +1,97 @@
+[
+    {
+      "question": "What was your wait time",
+      "type": "wait_time",
+      "answer": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60"
+      ]
+    },
+    {
+      "question": "How long did you wait",
+      "type": "wait_time",
+      "answer": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60"
+      ]
+    },
+    {
+      "question": "Rate your overall experience",
+      "type": "scale",
+      "answer": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "question": "Rate your overall treatment",
+      "type": "scale",
+      "answer": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "question": "Rate the hospital",
+      "type": "star",
+      "answer": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "question": "Rate the facility",
+      "type": "star",
+      "answer": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    {
+      "question": "Which language do you speak at home",
+      "type": "radio",
+      "answer": [
+        "english",
+        "spanish",
+        "french",
+        "other"
+      ]
+    },
+    {
+      "question": "Was the facility clean?",
+      "type": "radio",
+      "answer": [
+        "Yes, definitely",
+        "Yes, somewhat",
+        "No"
+      ]
+    }
+  ]
